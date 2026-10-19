@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repeat Wise — Privacy Policy</title>
+    <link rel="alternate" hreflang="en" href="https://hadiz.github.io/repeatwise-privacy/privacy-policy.html">
+    <link rel="alternate" hreflang="de" href="https://hadiz.github.io/repeatwise-privacy/de/privacy-policy.html">
+    <link rel="alternate" hreflang="fr" href="https://hadiz.github.io/repeatwise-privacy/fr/privacy-policy.html">
+    <link rel="alternate" hreflang="x-default" href="https://hadiz.github.io/repeatwise-privacy/privacy-policy.html">
     <style>
         :root {
             --text: #1a1a1a;
@@ -48,6 +52,12 @@
             margin-bottom: 0.5rem;
             color: var(--accent);
         }
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1.25rem;
+            margin-bottom: 0.35rem;
+        }
         p, li {
             font-size: 1rem;
             margin-bottom: 0.75rem;
@@ -57,11 +67,20 @@
             margin-bottom: 0.75rem;
         }
         li { margin-bottom: 0.35rem; }
-        a { color: var(--accent); }
+        a { color: var(--accent); overflow-wrap: anywhere; }
         hr {
             border: none;
             border-top: 1px solid var(--border);
             margin: 2rem 0;
+        }
+        .contact-card {
+            background: var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+        @media (prefers-color-scheme: dark) {
+            .contact-card { background: #2a2424; }
         }
         .footer {
             color: var(--muted);
@@ -69,12 +88,21 @@
             margin-top: 2.5rem;
             text-align: center;
         }
+        .lang-switch {
+            font-size: 0.875rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        .lang-switch a { text-decoration: none; }
+        .lang-switch [aria-current] { color: var(--text); font-weight: 600; }
     </style>
 </head>
 <body>
 
+<nav class="lang-switch" aria-label="Language"><span lang="en" aria-current="page">English</span> · <a href="de/privacy-policy.html" hreflang="de" lang="de">Deutsch</a> · <a href="fr/privacy-policy.html" hreflang="fr" lang="fr">Français</a></nav>
+
 <h1>Privacy Policy</h1>
-<p class="last-updated">Last updated: April 9, 2026</p>
+<p class="last-updated">Last updated: October 19, 2026</p>
 
 <p>Repeat Wise ("the App") is developed by Some Simple Solutions. Your privacy matters to us. This policy explains what information the App collects, how it is used, and the choices you have.</p>
 
@@ -82,21 +110,24 @@
 <p>All of your personal content is stored locally on your device and is never uploaded to our servers:</p>
 <ul>
     <li>Tasks, tags, and completion history</li>
-    <li>Diary entries, mood selections, and color choices</li>
+    <li>Diary entries, mood selections, color choices, and diary reflections</li>
     <li>Voice notes and videos you record</li>
 </ul>
-<p>We do not have access to this data. If you delete the App, this data is permanently removed.</p>
+<p>The Repeat Wise widget and its Siri &amp; Shortcuts actions read this same data on your device. We do not have access to it. If you delete the App, this data is permanently removed.</p>
+
+<h2>On-Device Intelligence</h2>
+<p>On devices that support Apple Intelligence, the App can use Apple's on-device model for features such as creating a task from a description, reflecting on a diary entry, suggesting a mood, searching by meaning, and schedule insights. This processing happens entirely on your device. Your content is not sent to us or to any third party. You can turn these features off at any time in Settings &gt; Intelligence.</p>
 
 <h2>Analytics</h2>
-<p>The App uses <strong>Firebase Analytics</strong> (provided by Google) to collect anonymous usage data such as which screens are viewed and which features are used. This helps us understand how the App is used so we can improve it. No personally identifiable information is collected through analytics.</p>
+<p>The App uses <strong>Firebase Analytics</strong> (provided by Google) to collect anonymous usage data such as which screens are viewed and which features are used. This helps us understand how the App is used so we can improve it. No personally identifiable information is collected through analytics. Analytics is on by default, and you can turn it off at any time in Settings &gt; Privacy &gt; Share Analytics.</p>
 
 <h2>Crash Reports</h2>
 <p>The App uses <strong>Firebase Crashlytics</strong> (provided by Google) to collect crash reports. When the App crashes, technical information about the crash (device model, operating system version, and stack trace) is sent automatically. This data does not include your personal content and is used solely to diagnose and fix issues.</p>
 
 <p>For more information on how Google processes this data, see the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a> documentation.</p>
 
-<h2>Camera, Microphone, and Photo Library</h2>
-<p>The App requests access to your camera, microphone, and photo library solely to let you attach voice notes, videos, and photos to your diary entries. Media you capture is stored on your device only and is never transmitted to us or any third party.</p>
+<h2>Camera and Microphone</h2>
+<p>The App requests access to your camera and microphone solely to let you record videos and voice notes for your diary entries. Media you capture is stored on your device only and is never transmitted to us or any third party.</p>
 
 <h2>No Tracking</h2>
 <p>The App does not track you across other apps or websites. We do not use advertising identifiers and do not share any data with advertisers or data brokers.</p>
